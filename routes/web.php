@@ -8,10 +8,6 @@ use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\TweetController;
 use Illuminate\Support\Facades\Route;
 
-Artisan::call('config:clear');
-Artisan::call('cache:clear');
-Artisan::call('view:clear');
-
 Route::get('/', [TweetController::class, 'index'])
     ->name('home');
 
